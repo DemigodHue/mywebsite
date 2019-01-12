@@ -1,0 +1,36 @@
+<style type="text/css">
+
+  p {
+    color: rgba(255, 0, 0, 0.9);
+  }
+
+  img
+  {
+    border
+    :3px solid rgb(0, 255, 0); }
+
+</style>
+<h2>my web page</h2>
+<p>
+  <strong>hello</strong>
+  <br /><img src="boxboi.png" />
+
+</p>
+<h3>intro</h3>
+where is mars ?
+<div id="answerbox"></div>
+<button id="fancyButton"> Hello Epic Gamers We Need Your Help All We
+   Need Is Your Creidt Card Info and the 3 wacky numbers
+  on the back and the expiration date quick to get mars in dota
+</button>
+<script>
+  var answer = prompt('where is mars?');
+  console.log(answer);
+  var element = document.getElementById('answerbox');
+  element.innerHTML = answer;
+  let name = null;
+  let button = document.getElementById('fancyButton');
+  button.addEventListener('click', function (event) {
+    name = prompt('Hello Epic Gamers We Need Your Help All We Need Is Your Creidt Card Info and the 3 wacky numberson the back and the expiration date quick!');
+  });
+</script>
